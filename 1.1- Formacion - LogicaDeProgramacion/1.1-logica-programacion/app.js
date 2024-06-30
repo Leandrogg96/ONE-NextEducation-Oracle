@@ -1,10 +1,11 @@
-let secretNumber = Math.floor(Math.random()*20)+1;
+let maximumLimit = 20;
+let secretNumber = Math.floor(Math.random()*maximumLimit)+1;
 let numberUser = 0;
 let counterAttempt = 1;
 let maximumAttempt = 4;
 
 while (numberUser != secretNumber) {
-    numberUser = parseInt(prompt("Can you give me a number between 0 and 20, please:"));
+    numberUser = parseInt(prompt(`Can you give me a number between 1 and ${maximumLimit}, please:`));
 
     console.log(numberUser);
 /*
