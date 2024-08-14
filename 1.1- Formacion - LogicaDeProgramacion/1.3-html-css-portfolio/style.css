@@ -1,4 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=New+Amsterdam&display=swap');
+* {
+    padding: 0;
+    margin:0;
+}
+
 body{
     background-color: black;
     color: white;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.titulo-destacado{
+    color: #22D4FD;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    margin: 11% 13%;
+    justify-content: space-between;
+}
+
+.presentacion-contenido {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.presentacion-contenido-titulo {
+    font-size: 36px;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.presentacion-contenido-texto {
+    font-size: 24px;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.presentacion-enlaces {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentacion-enlaces-link {
+    width: 200px;
+    background-color: #22D4FD;
+    text-align: center;
+    padding: 21.5px 0px;
+    border-radius: 16px;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
 }
