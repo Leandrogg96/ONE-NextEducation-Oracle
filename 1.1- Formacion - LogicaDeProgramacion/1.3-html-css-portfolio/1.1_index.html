@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header> </header>
+    <header class="header"> 
+        <nav class="header-menu">
+            <a class="header-menu-enlace" href="./1.1_index.html">Home</a>
+            <a class="header-menu-enlace" href="./about.html">Sobre mi</a>
+            <a class="header-menu-enlace" href="./about.html">Curriculum</a>
+        </nav>
+    </header>
     <main class="presentacion"> 
         <section class="presentacion-contenido">
             <h1 class="presentacion-contenido-titulo">
@@ -18,12 +24,22 @@
                 Aqui va un texto donde me voy a presentar. Intenta que te conozcan y venderte.
             </p>
             <div class="presentacion-enlaces">
-                <a class="presentacion-enlaces-link" href="https://www.instagram.com/leandro.gallac/"> Instagram</a>
-                <a class="presentacion-enlaces-link" href="https://github.com/Leandrogg96"> GitHub</a>
+                <h2 class="presentacion-enlaces-subtitulo">Accede a mis redes:</h2>
+                <a class="presentacion-enlaces-link" href="https://www.instagram.com/leandro.gallac/"> 
+                    <img src="./assets/instagram.png">
+                    Instagram</a>
+                <a class="presentacion-enlaces-link" href="https://github.com/Leandrogg96">
+                    <img src="./assets/github.png">
+                    GitHub</a>
+                <a class="presentacion-enlaces-link" href=https://www.linkedin.com/in/leandro-gallac-457a8b64/>
+                <img src="./assets/linkedin.png">
+                LinkedIn</a>
             </div>
         </section>
-        <img src="bg.png" alt="Imagen personal">
-    </main>
-    <footer> </footer>
+        <img src="./assets/bg.png" alt="Imagen personal">
+    </main> 
+    <footer class="footer"> 
+        <p>Desarrollado por mi</p>
+    </footer>
 </body>
 </html>

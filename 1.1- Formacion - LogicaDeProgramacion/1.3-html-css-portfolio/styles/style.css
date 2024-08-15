@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=New+Amsterdam&display=swap');
+
+:root {
+    --color-primario: #000000;
+    --color-secundario: white; 
+    --color-terciario: #22D4FD;
+
+    --fuente-amsterdam: 'New Amsterdam', sans serif;
+    --fuente-edu: 'Edu VIC WA NT Beginner', sans serif;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 2% 0% 0% 13%;
+} 
+
+.header-menu {
+    display: flex;
+    gap: 80px
+}
+
+.header-menu-enlace {
+    font-family: var(--fuente-amsterdam);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 7% 13%;
+    justify-content: space-between;
+}
+
+.presentacion-contenido {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.presentacion-contenido-titulo {
+    font-size: 36px;
+    font-family: var(--fuente-amsterdam);
+}
+
+.titulo-destacado{
+    color: #22D4FD;
+}
+
+.presentacion-contenido-texto {
+    font-size: 24px;
+    font-family: var(--fuente-edu);
+}
+
+.presentacion-enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion-enlaces-subtitulo {
+    font-family: var(--fuente-amsterdam);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.presentacion-enlaces-link {
+    width: 378px;
+    text-align: center;
+    padding: 20px 0px;
+    border-radius: 8px;
+    font-family: var(--fuente-amsterdam);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion-enlaces-link:hover {
+    background-color: #272727;
+}
+
+.footer {
+    background-color: var(--color-terciario);
+    padding: 13px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-amsterdam);
+    font-size: 24px;
+    font-weight: 400;
+}
