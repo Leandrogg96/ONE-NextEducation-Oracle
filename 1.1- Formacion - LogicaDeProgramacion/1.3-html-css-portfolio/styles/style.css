@@ -32,7 +32,7 @@ body{
 
 .header-menu-enlace {
     font-family: var(--fuente-amsterdam);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-terciario);
     text-decoration: none;
@@ -44,17 +44,18 @@ body{
     align-items: center;
     padding: 7% 13%;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion-contenido {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 37px;
 }
 
 .presentacion-contenido-titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuente-amsterdam);
 }
 
@@ -63,7 +64,7 @@ body{
 }
 
 .presentacion-contenido-texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-edu);
 }
 
@@ -77,17 +78,17 @@ body{
 
 .presentacion-enlaces-subtitulo {
     font-family: var(--fuente-amsterdam);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .presentacion-enlaces-link {
-    width: 378px;
+    width: 50%;
     text-align: center;
     padding: 20px 0px;
     border-radius: 8px;
     font-family: var(--fuente-amsterdam);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--color-secundario);
@@ -101,12 +102,17 @@ body{
     background-color: #272727;
 }
 
+.presentacion-imagen {
+    width: 50%;    
+}
+
+
 .footer {
     background-color: var(--color-terciario);
     padding: 13px;
     color: var(--color-primario);
     text-align: center;
     font-family: var(--fuente-amsterdam);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
