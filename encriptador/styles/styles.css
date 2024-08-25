@@ -47,16 +47,22 @@
     color: var(--white);
 }
 
-.body{
-    background: url(../assets/2927254.jpg) no-repeat center center fixed;
-    background-color: black;
-    color: var(--color-secundario);
-    box-sizing: border-box;
+
+body {
+    background-image: url('../assets/5594016.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: 100vw 100vh; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido se distribuya correctamente */
 }
 
 img{
     max-width: 100%;
 }
+
 
 .Principal {
     min-height: 100vh;
@@ -66,13 +72,25 @@ img{
 
 /*----- Encabezado -----*/
 
+h1, .texto-aviso {
+    background-color: transparent; /* Elimina cualquier fondo blanco */
+    color: #000000; /* Color del texto */
+}
+
 .header{
     display: flex;
     flex-direction: row;
     position: absolute;
     margin: 40px 0px 0px 40px;
     gap: 30px;
+    box-shadow: none; /* Sin sombra */
+    border: none; /* Sin bordes */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra suave */
+    color: black; /* Color del texto */
+    background: transparent; /* Asegura que estos elementos no tengan fondo que tape la imagen */
+    flex-grow: 1;
 }
+
 
 .header.logo{
     display: flex;
@@ -95,6 +113,9 @@ main{
     background-size: cover;
     height: max-content;
     background-position: center;
+    background-color: transparent;
+    min-height: calc(100vh - 100px); /* Ajusta el valor según la altura de tu footer */
+    flex: 1;
 }
 
 
@@ -140,10 +161,14 @@ main{
     flex-direction: row;
     align-items: center;
     background-color: transparent;
+    justify-content: space-between;
     gap: 4px;
     position: absolute;
     top: 400px;
 }
+
+
+
 
 .texto-aviso{
     font-style: normal;
@@ -171,7 +196,8 @@ main{
 .encriptador-contenedor{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
     background: transparent;
     gap: 4px;
     position: absolute;
@@ -181,7 +207,7 @@ main{
 .btn-encriptar{
     width: 329px;
     height: 67px;
-    padding: 24px;
+    padding: 10px 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -204,7 +230,7 @@ main{
 .btn-desencriptar{
     width: 329px;
     height: 67px;
-    padding: 24px;
+    padding: 10px 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -217,6 +243,8 @@ main{
     cursor: pointer;
     box-shadow: 0px 20px 29px -5px var(--RGBA);
 }
+
+
 .btn-limpiar:active,
 .btn-copiar:active,
 .btn-desencriptar:active{
@@ -302,7 +330,7 @@ main{
     position: inherit;
     bottom: 5px;
     visibility: hidden;
-    padding: 24px;
+    padding: 10px 20px;
     font-size: 19px;
     font-weight: 400;
     line-height: 10px;
@@ -314,6 +342,7 @@ main{
     cursor: pointer;
 }
 
+
 .btn-limpiar{
     width: 166px;
     height: 57px;
@@ -321,7 +350,7 @@ main{
     position: inherit;
     bottom: 5px;
     visibility: hidden;
-    padding: 24px;
+    padding: 10px 20px;
     font-size: 19px;
     font-weight: 400;
     line-height: 10px;
@@ -343,7 +372,7 @@ main{
 /*----- Pie de Página ------*/
 
 footer{
-    margin-top: 51px;
+    margin-top: 0%;
     padding: 10px;
     border-top: 2px solid var(--Font);
     color: var(--Gray);
@@ -351,6 +380,9 @@ footer{
     height: 5px;
     font-size: 20px;
     font-weight: 700;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
 }
 
 .linkedin:hover{
