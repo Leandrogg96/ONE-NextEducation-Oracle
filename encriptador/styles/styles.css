@@ -47,14 +47,21 @@
     color: var(--white);
 }
 
-body{
-    background-color: transparent;
+.body{
+    background: url(../assets/2927254.jpg) no-repeat center center fixed;
+    background-color: black;
     color: var(--color-secundario);
     box-sizing: border-box;
 }
 
 img{
     max-width: 100%;
+}
+
+.Principal {
+    min-height: 100vh;
+    background-image: url(../assets/imagen2.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 /*----- Encabezado -----*/
@@ -67,7 +74,7 @@ img{
     gap: 30px;
 }
 
-header.logo{
+.header.logo{
     display: flex;
     align-items: flex-start;
     width: 120px;
@@ -85,13 +92,14 @@ header.logo{
 main{
     display: flex;
     flex-direction: row;
-    background: url(../assets/2927254.jpg) no-repeat;
     background-size: cover;
+    height: max-content;
     background-position: center;
 }
 
 
 .header-menu {
+    background-color: transparent;
     display: flex;
     gap: 80px
 }
